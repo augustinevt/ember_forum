@@ -1,12 +1,11 @@
 <div class="question-tile-container">
   {{#link-to 'question' question}}<h1>{{question.title}}</h1>{{/link-to}}
-
   <p class="body-question">
     {{question.body}}
   </p>
   <div class="row">
     <div class="col-sm-2 col-sm-offset-9">
-      <h3> -> {{question.author}}</h3>
+      <h3>{{question.author}}</h3>
     </div>
   </div>
 </div>

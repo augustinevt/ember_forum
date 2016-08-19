@@ -18,39 +18,12 @@
     </div>
   </div>
 </div>
-
-
 {{#each model.answers as |answer|}}
-<div class="row">
-  <div class="col-md-8 col-md-offset-1 height-control color question-list-box">
-  {{tile-answer answer=answer upvote="upvote" downvote="downvote"}}
-  {{edit-answer answer=answer updateAnswer="updateAnswer" deleteAnswer="deleteAnswer"}}
-</div>
-</div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-1 height-control color question-list-box">
+      {{tile-answer answer=answer upvote="upvote" downvote="downvote"}}
+      {{edit-answer answer=answer updateAnswer="updateAnswer" deleteAnswer="deleteAnswer"}}
+    </div>
+  </div>
 {{/each}}
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 {{new-answer question=model saveAnswer="saveAnswer" }}
-
-
-
-
-<!-- <h1>{{model.title}}</h1>
-  <p>
-    {{model.body}}
-  </p>
-<h3> -> {{model.author}}</h3>
-<hr>
-{{#each model.answers as |answer|}}
-  {{tile-answer answer=answer upvote="upvote" downvote="downvote"}}
-  {{edit-answer answer=answer updateAnswer="updateAnswer" deleteAnswer="deleteAnswer"}}
-  <hr>
-{{/each}}
-
-
-{{new-answer question=model saveAnswer="saveAnswer" }} -->

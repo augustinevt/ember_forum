@@ -1,7 +1,8 @@
 # Ember-forum-epicodus
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+### by August von Trapp
+
+this is forum for asking important questions and getting answers from other passionate people!
 
 ## Prerequisites
 
@@ -51,3 +52,23 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## Technologies
+
+
+  * ember
+  * node
+  * firebase
+  * javascript
+  * html
+  * css
+
+## Issues
+
+  there are no known bugs
+
+## contact
+  please contact me at augustvontrapp@gmail.com
+
+### License
+
+  Copyright (c) 2016 August von Trapp
