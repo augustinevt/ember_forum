@@ -1,3 +1,6 @@
 <h3>this is the index</h3>
 
-{{new-question}}
+{{#each model as |question|}}
+  {{display-question }}
+{{/each}}
+{{new-question save="save"}}
