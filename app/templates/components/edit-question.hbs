@@ -1,0 +1,8 @@
+{{#if formShow}}
+  {{input value=title id="title"}}
+  {{input value=body id="body"}}
+  {{input value=author id="author"}}
+  <button {{action 'update' question}}>update question!</button>
+{{else}}
+  <button {{action 'showForm'}}>edit question!</button>
+{{/if}}
