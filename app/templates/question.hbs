@@ -3,5 +3,10 @@
     {{model.body}}
   </p>
 <h3> -> {{model.author}}</h3>
+{{#each model.answers as |answer|}}
+  {{tile-answer answer=answer}}
+  <hr>
+{{/each}}
+
 
 {{new-answer question=model saveAnswer="saveAnswer" }}
