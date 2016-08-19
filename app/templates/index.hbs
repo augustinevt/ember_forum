@@ -2,7 +2,7 @@
 
 {{#each model as |question|}}
   {{tile-question question=question}}
-  {{edit-question question=question update="update"}}
+  {{edit-question question=question update="update" delete="delete"}}
   <hr>
 {{/each}}
 {{new-question save="save"}}
