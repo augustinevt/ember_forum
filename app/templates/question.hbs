@@ -3,8 +3,10 @@
     {{model.body}}
   </p>
 <h3> -> {{model.author}}</h3>
+<hr>
 {{#each model.answers as |answer|}}
   {{tile-answer answer=answer}}
+  {{edit-answer answer=answer updateAnswer="updateAnswer" deleteAnswer="deleteAnswer"}}
   <hr>
 {{/each}}
 

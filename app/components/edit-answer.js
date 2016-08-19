@@ -6,18 +6,18 @@ export default Ember.Component.extend({
     showForm(){
       this.set('formShow', true);
     },
-    updateAnswer(question){
+    updateAnswer(answer){
       var params = {
-        title: this.get('title'),
         body: this.get('body'),
         author: this.get('author')
       };
+      console.log(params);
       this.set('formShow', false);
-      this.sendAction('updateAnswer', question, params);
+      this.sendAction('updateAnswer', answer, params);
     },
-    deleteAnswer(question){
+    deleteAnswer(answer){
       if(confirm('are you sure?')){
-        this.sendAction('deleteAnswer', question);
+        this.sendAction('deleteAnswer', answer);
       }
     }
   }

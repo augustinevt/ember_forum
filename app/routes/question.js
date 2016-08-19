@@ -16,19 +16,19 @@ export default Ember.Route.extend({
       });
       this.transitionTo('question', question.id);
     },
-    updateAnswer(question, params){
+    updateAnswer(answer, params){
       Object.keys(params).forEach(function(key){
         if(params[key] !== undefined){
-          question.set(key, params[key]);
+          answer.set(key, params[key]);
         }
       });
-      question.save();
-      this.transitionTo('index');
+      answer.save();
+      this.transitionTo('question', answer.question.id);
     },
-    delete(question){
-      console.log(question);
-      question.destroyRecord();
-      this.transitionTo('index');
+    deleteAnswer(answer){
+      console.log(answer);
+      answer.destroyRecord();
+      this.transitionTo('question', answer.question.id);
     }
   }
 });
