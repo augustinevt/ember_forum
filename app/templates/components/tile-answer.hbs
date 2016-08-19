@@ -1,4 +1,4 @@
-<h1>{{answer.upvotes}}||{{answer.downvotes}}</h1>
+<h1{{action 'upvote' answer}}> {{answer.upvotes}}</h1>||<h1{{action 'downvote' answer}}>{{answer.downvotes}}</h1>
 <p>
   {{answer.body}}
 </p>

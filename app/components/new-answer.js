@@ -10,8 +10,8 @@ export default Ember.Component.extend({
       var params = {
         body: this.get('body'),
         author: this.get('author'),
-        upvotes: '0',
-        downvotes: '0',
+        upvotes: 1,
+        downvotes: 1,
         question: this.get('question')
       };
       this.set('formShow', false);

@@ -29,6 +29,16 @@ export default Ember.Route.extend({
       console.log(answer);
       answer.destroyRecord();
       this.transitionTo('question', answer.question.id);
-    }
+    },
+    upvote(answer){
+      var votes = answer.get('upvotes') + 1;
+      answer.set('upvotes', votes);
+      answer.save();
+    },
+    downvote(answer){
+      var votes = answer.get('downvotes') + 1;
+      answer.set('downvotes', votes);
+      answer.save();
+    },
   }
 });

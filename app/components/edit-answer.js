@@ -19,6 +19,6 @@ export default Ember.Component.extend({
       if(confirm('are you sure?')){
         this.sendAction('deleteAnswer', answer);
       }
-    }
+    },
   }
 });
