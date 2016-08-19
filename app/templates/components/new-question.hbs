@@ -1,11 +1,11 @@
 {{#if formShow}}
-  {{input value=title id="title"}}
-  {{input value=body id="body"}}
-  {{input value=author id="author"}}
+  {{input value=title id="title" placeholder="title"}}
+  {{textarea value=body id="body" placeholder="body"}}
+  {{input value=author id="author" placeholder="author"}}
   <button {{action 'save'}}>save question!</button>
 {{else}}
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-3 new-question-cta">  
+    <div class="col-sm-6 col-sm-offset-3 new-question-cta">
       <button {{action 'showForm'}}>add question!</button>
     </div>
   </div>

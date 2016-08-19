@@ -1,10 +1,24 @@
-<hr>
-{{#if formShow}}
-  {{input value=title id="title" placeholder=question.title}}
-  {{input value=body id="body" placeholder=question.body}}
-  {{input value=author id="author" placeholder=question.author}}
-  <button {{action 'update' question}}>update question!</button>
-  <button {{action 'delete' question}}>delete question!</button>
-{{else}}
+<div class="edit-question-container">
+  {{#if formShow}}
+  <div class="row">
+    <div class="col-sm-4 input-div col-sm-offset-2">
+      {{input value=title id="title" placeholder=question.title}}
+    </div>
+    <div class="col-sm-4 input-div">
+      {{input value=author id="author" placeholder=question.author}}
+    </div>
+    <div class="col-sm-">
+      {{textarea value=body id="body" placeholder=question.body}}
+    </div>
+    <div class="col-sm-3 col-sm-offset-3">
+      <button {{action 'update' question}}>update question!</button><br>
+    </div>
+    <div class="col-sm-3">
+      <button {{action 'delete' question}}>delete question!</button>
+    </div>
+
+  </div>
+  {{else}}
   <button {{action 'showForm'}}>edit question!</button>
-{{/if}}
+  {{/if}}
+</div>
