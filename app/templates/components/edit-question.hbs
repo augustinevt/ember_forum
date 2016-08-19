@@ -1,7 +1,8 @@
+<hr>
 {{#if formShow}}
-  {{input value=title id="title"}}
-  {{input value=body id="body"}}
-  {{input value=author id="author"}}
+  {{input value=title id="title" placeholder=question.title}}
+  {{input value=body id="body" placeholder=question.body}}
+  {{input value=author id="author" placeholder=question.author}}
   <button {{action 'update' question}}>update question!</button>
   <button {{action 'delete' question}}>delete question!</button>
 {{else}}

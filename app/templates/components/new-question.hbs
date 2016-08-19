@@ -4,5 +4,9 @@
   {{input value=author id="author"}}
   <button {{action 'save'}}>save question!</button>
 {{else}}
-  <button {{action 'showForm'}}>add question!</button>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 new-question-cta">  
+      <button {{action 'showForm'}}>add question!</button>
+    </div>
+  </div>
 {{/if}}

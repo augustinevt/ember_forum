@@ -1,0 +1,44 @@
+div {
+  /*border: solid;*/
+}
+
+hr {
+  margin: 10px;
+}
+
+a {
+  color: rgba(0, 204, 255, 0.5);
+}
+a:hover {
+  color: rgba(0, 184, 230, 1.0);
+  text-decoration: none;
+}
+
+.color {
+  border-color: red;
+}
+
+.height-control {
+  height: 200px;
+}
+
+/*index*/
+
+.banner h1 {
+  text-align: center;
+}
+
+.banner {
+
+}
+
+.question-list-box {
+  margin-top: 40px;
+  background-color: rgba(153, 153, 255, 0.5);
+}
+
+.new-question-cta {
+  text-align: center;
+  margin-top: 40px;
+
+}

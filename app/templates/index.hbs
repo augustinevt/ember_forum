@@ -1,10 +1,45 @@
 <h3>this is the index</h3>
 
-{{#each model as |question|}}
+
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 color height-control banner">
+      <h1>Welcome to the home page! </h1>
+      <div class="col-md-8 col-md-offset-2">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+
+      {{#each model as |question|}}
+        <div class="col-md-6 height-control color">
+          <div class="question-list-box">    
+            {{tile-question question=question}}
+            {{edit-question question=question update="update" delete="delete"}}
+          </div>
+      </div>
+      {{/each}}
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 color height-control new-question">
+    {{new-question save="save"}}
+  </div>
+</div>
+
+
+
+<!-- {{#each model as |question|}}
   {{#link-to 'question' question}}
     {{tile-question question=question}}
   {{/link-to}}
   {{edit-question question=question update="update" delete="delete"}}
   <hr>
 {{/each}}
-{{new-question save="save"}}
+{{new-question save="save"}} -->

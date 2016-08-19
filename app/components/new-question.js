@@ -12,7 +12,10 @@ export default Ember.Component.extend({
         body: this.get('body'),
         author: this.get('author')
       };
-      this.set('formShow', false);
+      this.set('formShow', '');
+      this.set('title', '');
+      this.set('body', '');
+      this.set('author', '');
       this.sendAction('save', params);
     }
   }

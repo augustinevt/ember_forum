@@ -1,6 +1,6 @@
 {{#if formShow}}
-  {{input value=body id="body"}}
-  {{input value=author id="author"}}
+  {{input value=body id="body" placeholder=answer.body}}
+  {{input value=author id="author" placeholder=answer.author}}
   <button {{action 'updateAnswer' answer}}>update answer!</button>
   <button {{action 'deleteAnswer' answer}}>delete answer!</button>
 {{else}}
